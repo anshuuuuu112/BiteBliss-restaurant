@@ -676,3 +676,50 @@ footer {
 }
 
 }
+
+.popup{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    z-index:1000;
+}
+
+.popup-content{
+    background:#fff;
+    width:400px;
+    max-width:90%;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+}
+
+.popup-content h2{
+    color:#28a745;
+    margin-bottom:15px;
+}
+
+.popup-content p{
+    font-size:18px;
+    margin-bottom:20px;
+    color:#444;
+}
+
+.close-btn{
+    float:right;
+    font-size:30px;
+    cursor:pointer;
+    color:#888;
+}
+
+.close-btn:hover{
+    color:red;
+}

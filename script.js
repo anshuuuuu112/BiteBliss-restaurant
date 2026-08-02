@@ -12,8 +12,6 @@ function showMenu(category){
     document.getElementById(category).style.display = "block";
 
 }
-
-// Show Pizza by default
 window.onload = function(){
 
     if(document.getElementById("pizza")){
@@ -52,5 +50,19 @@ if(reservationForm){
         }
 
     });
+
+}
+function placeOrder(foodName){
+
+    document.getElementById("popupMessage").innerHTML =
+        "Your order for <b>" + foodName + "</b> has been placed successfully!<br><br>Thank you for choosing BiteBliss Restaurant.";
+
+    document.getElementById("orderPopup").style.display = "block";
+
+}
+
+function closePopup(){
+
+    document.getElementById("orderPopup").style.display = "none";
 
 }
