@@ -60,9 +60,13 @@ function placeOrder(foodName){
     document.getElementById("orderPopup").style.display = "block";
 
 }
-
 function closePopup(){
 
     document.getElementById("orderPopup").style.display = "none";
+
+}
+function toggleMenu(){
+
+    document.getElementById("navbar").classList.toggle("active");
 
 }

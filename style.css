@@ -547,28 +547,23 @@ footer {
     border-radius:25px;
     cursor:pointer;
 }
-
 .menu-category{
     padding:60px 8%;
     text-align:center;
     background:#fff;
 }
-
 .menu-category h2{
     font-size:35px;
     color:#e67e22;
     margin-bottom:10px;
 }
-
 .menu-category p{
     color:#666;
     margin-bottom:30px;
 }
-
 .category-buttons{
     margin-top:20px;
 }
-
 .category-buttons button{
     padding:12px 25px;
     margin:8px;
@@ -580,22 +575,18 @@ footer {
     cursor:pointer;
     transition:0.3s;
 }
-
 .category-buttons button:hover{
     background:#cf711f;
 }
-
 .menu-items{
     display:none;
     padding:50px 8%;
 }
-
 .menu-container{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:30px;
 }
-
 .menu-card{
     background:#fff;
     border-radius:10px;
@@ -604,34 +595,28 @@ footer {
     text-align:center;
     transition:0.3s;
 }
-
 .menu-card:hover{
     transform:translateY(-8px);
 }
-
 .menu-card img{
     width:100%;
     height:220px;
     object-fit:cover;
 }
-
 .menu-card h3{
     margin-top:15px;
     font-size:24px;
     color:#333;
 }
-
 .menu-card p{
     padding:0 15px;
     color:#666;
     margin:10px 0;
 }
-
 .menu-card h4{
     color:#e67e22;
     margin:10px 0;
 }
-
 .menu-card .btn{
     display:inline-block;
     margin:15px 0 20px;
@@ -644,29 +629,20 @@ footer {
     cursor:pointer;
     transition:.3s;
 }
-
 .menu-card .btn:hover{
     background:#cf711f;
 }
-
-/* Responsive */
-
 @media(max-width:992px){
-
 .menu-container{
     grid-template-columns:repeat(2,1fr);
 }
-
 }
-
 @media(max-width:768px){
-
 .category-buttons button{
     display:block;
     width:220px;
     margin:10px auto;
 }
-
 .menu-container{
     grid-template-columns:1fr;
 }
@@ -676,7 +652,6 @@ footer {
 }
 
 }
-
 .popup{
     display:none;
     position:fixed;
@@ -687,7 +662,6 @@ footer {
     background:rgba(0,0,0,0.5);
     z-index:1000;
 }
-
 .popup-content{
     background:#fff;
     width:400px;
@@ -701,25 +675,60 @@ footer {
     transform:translate(-50%,-50%);
     box-shadow:0 5px 20px rgba(0,0,0,0.3);
 }
-
 .popup-content h2{
     color:#28a745;
     margin-bottom:15px;
 }
-
 .popup-content p{
     font-size:18px;
     margin-bottom:20px;
     color:#444;
 }
-
 .close-btn{
     float:right;
     font-size:30px;
     cursor:pointer;
     color:#888;
 }
-
 .close-btn:hover{
     color:red;
+}
+/* Hamburger Menu */
+
+.menu-toggle{
+
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+    color:#e67e22;
+
+}
+@media(max-width:768px){
+.menu-toggle{
+
+    display:block;
+}
+nav{
+    display:none;
+    width:100%;
+
+}
+nav.active{
+
+    display:block;
+
+}
+nav ul{
+
+    flex-direction:column;
+    background:#fff;
+    padding:20px;
+
+}
+nav ul li{
+
+    margin:15px 0;
+    text-align:center;
+
+}
 }
