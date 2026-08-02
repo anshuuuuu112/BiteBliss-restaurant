@@ -8,7 +8,6 @@
 body{
     background:#f8f8f8;
 }
-
 header{
     width:100%;
     position:fixed;
@@ -693,8 +692,6 @@ footer {
 .close-btn:hover{
     color:red;
 }
-/* Hamburger Menu */
-
 .menu-toggle{
 
     display:none;
